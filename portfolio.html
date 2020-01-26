@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./assets/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container col-xl-7 col-lg-8 col-md-9 col-sm-10">
+                <h1 class="navbar-brand"> Harley Cripe </h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item borderr">
+                            <a class="nav-link shad" href="./index.html"> About me <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active borderr shad">
+                            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-nav-link shad">
+                            <a class="nav-link" href="./contact.html">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main container im col-xl-7 col-lg-8 col-md-9 col-sm-10">
+            <h2> Portfolio </h2>
+            <hr>
+            <p>On this page, there are some porjects that I have completed</p>
+            <p>If you would like to see some more of my work, check out my github page <a href="https://github.com/ZonkeyStripes/">here</a>!</p>
+            <div class="row">
+                <!-- <div class="left">
+                    <img src="https://www.peta.org/wp-content/uploads/2017/05/Kenny-4-602x399.jpg" alt="White Liger" width="100%" height="100%"
+                        style="max-width: 300px; max-height: 200px;">
+                    <h3> Hangman </h3>
+                </div>
+                <div class="left">
+                    <img src="https://twistedsifter.files.wordpress.com/2012/01/savannah_cat_closeup.jpg?w=800&h=507&zoom=2"
+                        alt="Savannah" width="100%" height="100%" style="max-width: 300px; max-height: 200px;">
+                    <h3>RPG Game</h3>
+                </div> -->
+                <div class="left">
+                    <img src="Images/Cartoon-Alien.jpg" alt="Alien" width="100%" height="100%" style="max-width: 300px; max-height: 200px;">
+                    <h3> <a href="https://zonkeystripes.github.io/PasswordGenerator/"> Password Generator</a> </h3>
+                </div>
+                <div class="left">
+                        <img src="Images/Weather-Blog-Image.jpg" alt="Storm" width="100%" height="100%" style="max-width: 300px; max-height: 200px;">
+                        <h3><a href="https://zonkeystripes.github.io/Weather_Teller/">The Weather Teller</a></h3>
+                </div>
+            </div>
+                    <div class="left cent">
+                        <img src="https://i0.wp.com/metro.co.uk/wp-content/uploads/2018/11/sei_38307333-0b17.jpg?quality=90&strip=all&zoom=1&resize=644%2C471&ssl=1"
+                            id="bannerImage"  alt="Zonkey" width="100%" height="100%" style="max-width: 300px; max-height: 200px;">
+                        <h4> <a href="https://moullier.github.io/recipefinder/recipefinder.html">Recipe Finder!! </a> </h4>
+                    </div>
+            <p style="text-align: center;"> More comming soon! </p>
+        </div>
+    </main>
+    <footer id="foot">
+
+        Copyright &copy;
+
+    </footer>
+<script>
+        // var links = ["http://www.abc.com","http://www.def.com","http://www.ghi.com"];
+        var images = ["Images/RecipeFind1.png","Images/RecipeFind2.png","Images/RecipeFind3.png"];
+        var i = 0;
+        var renew = setInterval(function(){
+            if(images.length == i){
+                i = 0;
+            }
+            else {
+            document.getElementById("bannerImage").src = images[i]; 
+            // document.getElementById("bannerLink").href = links[i]; 
+            i++;
+
+        }
+        },5000);
+</script>
+</body>
+
+</html>
